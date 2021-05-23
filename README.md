@@ -20,4 +20,7 @@ NOTE: The above commands are for running the program only if you have python ins
 <br>
 If you´re using something like Anaconda or other programs you will need to run thje program maybe in a different way/method.
 
-# The program is complete, just with the time will be added more functions if its neccessary.
+# The following functionality will be added.
+* A menu in order to use the another functions.
+* The menu will show options like moving the file from downloads to the target path
+* Will create other local backups
