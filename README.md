@@ -1,7 +1,7 @@
 # Instructions
 
 ## Purpose
-For this program and because I play a lot minecraft I decided to cerate a program that can help me to manage the backups of my worlds of minecraft.
+For this program and because I play a lot minecraft I decided to create a program that can help me to manage the backups of my worlds of minecraft.
 <br>
 This is because sometimes I want to do specific things with that worlds so more functions will be added with the time according to what I need to do with the worlds
 
