@@ -11,6 +11,8 @@ class funciones():
         lstFiles= []
         
         for root, dirs, files in resuls:
+            print(root)
+            print(dirs)
             for fichero in files:
                 (nombreFichero, extension)= os.path.splitext(fichero)
                 if (extension== self.exten):
