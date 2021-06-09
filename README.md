@@ -21,6 +21,7 @@ NOTE: The above commands are for running the program only if you have python ins
 If you´re using something like Anaconda or other programs you will need to run thje program maybe in a different way/method.
 
 # The following functionality will be added.
-* A menu in order to use the another functions.
+* A menu for showing options like see what files we have in downloads.
 * The menu will show options like moving the file from downloads to the target path
 * Will create other local backups
+* Move the worlds to a sub folder and also for pack resources for RTX and other ones.
