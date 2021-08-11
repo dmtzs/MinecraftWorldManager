@@ -28,3 +28,21 @@ class funciones():
             return "cls"
         else:
             return "clear"
+
+    def ValidarInt(self, opcion):
+        try:
+            aux= int(opcion)
+            return True
+
+        except Exception:
+            return False
+
+    def TraerArchs(self):
+        pass
+
+class Pantallas():
+    def Menu(self):
+        print("\n\n\n\t\t\t\t**Menú**\n")
+        print("\t\t\t1. Guardar mundo.")
+        print("\t\t\t2. Traer mundo.")
+        print("\t\t\t3. Salir")
