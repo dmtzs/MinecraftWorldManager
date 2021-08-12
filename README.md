@@ -12,16 +12,15 @@ This is because sometimes I want to do specific things with that worlds so more 
 
 ## Execution of the program
 After all previous considerations are done in order to run the program you need to write in the terminal the next command:
-* If you´re in Windows: python ScrapingMain.py
-* If you´re in Linux: python3 ScrapingMain.py
-* If you´re in Mac: python ScrapingMain.py
+* If you´re in Windows: python Maincra.py
+* If you´re in Linux: python3 Maincra.py
 <br>
 NOTE: The above commands are for running the program only if you have python installed in your computer using your environment variables.
 <br>
 If you´re using something like Anaconda or other programs you will need to run thje program maybe in a different way/method.
 
 # The following functionality will be added.
-* A menu for showing options like see what files we have in downloads.
-* The menu will show options like moving the file from downloads to the target path
-* Will create other local backups
+* A menu for showing options like see what files we have in the destination folder.
+* The menu will show options like moving the file from downloads to the destination folder.
+* Will create other local backups.
 * Move the worlds to a sub folder and also for pack resources for RTX and other ones.
