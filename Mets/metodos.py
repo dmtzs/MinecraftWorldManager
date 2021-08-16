@@ -5,7 +5,6 @@ except ImportError as errorimp2:
 
 class funciones():
     exten= ".mcworld"
-    rutaGuardar= r"C:\Users\Diego\OneDrive\Documentos\MundosMaincra"
 
     def ObtenerArchivos(self, resuls):
         lstFiles= []
@@ -17,9 +16,9 @@ class funciones():
                     lstFiles.append(nombreFichero+self.exten)
         return lstFiles
     
-    def Guardar(self, rutaOrigen, arregloArchivos):
+    def Guardar(self, rutaOrigen, rutaMover, arregloArchivos):
         for mundo in arregloArchivos:
-            shutil.move(f"{rutaOrigen}\\{mundo}", f"{self.rutaGuardar}\\{mundo}")
+            shutil.move(f"{rutaOrigen}\\{mundo}", f"{rutaMover}\\{mundo}")
 
     def LimpiarConsolaSO(self):
         sistema= platform.system()
@@ -36,9 +35,6 @@ class funciones():
 
         except Exception:
             return False
-
-    def TraerArchs(self):
-        pass
 
 class Pantallas():
     def Menu(self):

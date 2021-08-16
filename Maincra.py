@@ -7,6 +7,7 @@ except ImportError as errorimp:
 
 def main(accion, comm, pants):
     rutaOrigen= r"C:\Users\Diego\Downloads"
+    rutaGuardar= r"C:\Users\Diego\OneDrive\Documentos\MundosMaincra"
     salir= True
 
     os.system(comm)
@@ -19,9 +20,14 @@ def main(accion, comm, pants):
                 resuls= os.walk(rutaOrigen)
 
                 archivosMaincra= accion.ObtenerArchivos(resuls)
-                accion.Guardar(rutaOrigen, archivosMaincra)
+                accion.Guardar(rutaOrigen, rutaGuardar, archivosMaincra)
             elif op== 2:
-                pass
+                resuls= os.walk(rutaGuardar)
+                archivosMaincra= accion.ObtenerArchivos(resuls)
+                for i in archivosMaincra:
+                    print(i)
+                #Falta la parte de seleccionar el archivo y pasarlo a downloads
+
             elif op== 3:
                 salir= False
         else:
