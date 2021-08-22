@@ -1,5 +1,7 @@
 try:
-    import os, shutil, platform
+    import os
+    import shutil
+    import platform
 except ImportError as errorimp2:
     print(f"Ocurrió el siguiente error de importación: {errorimp2}")
 
