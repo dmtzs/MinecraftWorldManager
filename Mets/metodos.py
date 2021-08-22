@@ -22,6 +22,9 @@ class funciones():
         for mundo in arregloArchivos:
             shutil.move(f"{rutaOrigen}\\{mundo}", f"{rutaMover}\\{mundo}")
 
+    def Descargas(self, rutaOrigen, rutaMover, Arch):
+        shutil.move(f"{rutaOrigen}\\{Arch}", f"{rutaMover}\\{Arch}")
+
     def LimpiarConsolaSO(self):
         sistema= platform.system()
 
@@ -32,7 +35,7 @@ class funciones():
 
     def ValidarInt(self, opcion):
         try:
-            aux= int(opcion)
+            _= int(opcion)
             return True
 
         except Exception:
@@ -44,3 +47,32 @@ class Pantallas():
         print("\t\t\t1. Guardar mundo.")
         print("\t\t\t2. Traer mundo.")
         print("\t\t\t3. Salir")
+    
+    def SoloEnteros(self, comm):
+        import time
+
+        os.system(comm)
+        print("Solo están permitidos números enteros")
+        time.sleep(3)
+        os.system(comm)
+
+    def NoArchivos(self, comm):
+        import time
+
+        os.system(comm)
+        print("No hay mundos de minecraft guardados en la ruta")
+        time.sleep(3)
+        os.system(comm)
+
+    def MensajeFinalOpciones(self, comm, bandera):
+        import time
+        
+        if bandera== 0:
+            print("\n\n\n\t\t\tMundos de Minecraft movidos con éxito!!!")
+            time.sleep(3)
+            os.system(comm)
+
+        elif bandera== 1:
+            print("\n\n\n\t\t\tArchivos pasados a descargas con éxito!!!")
+            time.sleep(3)
+            os.system(comm)
